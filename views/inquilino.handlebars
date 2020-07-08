@@ -1,20 +1,54 @@
-<form action="/confirm" method="POST">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+    .center{
+        align-items: center;
+    }
+    .menubtn{
+        margin-left: 160px;
+    }
+</style>
 
-    <p>Nome</p>
-    <input type="text" name="nome">
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header card-header-info">
+            <a href="/inq" class="btn btn-success menubtn">Inquilinos</a>
 
-    <p>CPF</p>
-    <input type="text" name="cpf">
+            <a href="/infoinq" class="btn btn-secondary menubtn">Informações Inquilinos</a>
 
-    <p>Telefone</p>
-    <input type="text" name="telefone">
+            <a href="/pag" class="btn btn-secondary menubtn">Pagamentos</a>
 
-    <p>Data de Inicio do contrato</p>
-    <input type="text" name="inicioContrato">
+            <a href="/infopag" class="btn btn-secondary menubtn">Informações Pagamentos</a>
+        </div>
+    </div>
+</div>
 
-    <p>Data de término do contrato</p>
-    <input type="text" name="fimContrato">
-
-    <button type="submit">Salvar</button>
-
+<form action="/confinq" method="POST">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                 <div class="card center">
+                  <br>
+                  <br>
+               <p>Nome</p>
+               <input type="text" name="nome" class="form-control col-sm-8">
+                  <br>
+               <p>CPF</p>
+               <input type="text" name="cpf" class="form-control col-sm-4">
+                 <br>
+             <p>Telefone</p>
+             <input type="text" name="telefone" class="form-control col-sm-4">
+              <br>
+                <br>
+                <br>
+               <p>Data de Inicio do contrato</p>
+               <input type="text" name="inicioContrato" class="form-control col-sm-4">
+                <br>
+              <p>Data de término do contrato</p>
+              <input type="text" name="fimContrato" class="form-control col-sm-4">
+                <br>
+             <button type="submit" class="btn btn-success col-sm-2">Salvar</button>
+                <br>
+            </div>
+        </div>
+    </div>
 </form>
