@@ -33,7 +33,6 @@
                     <table>
                         <tr>
                             <thead>
-                                <th>Ordem:</th>
                                 <th>Data de pagamento estabelecida:</th>
                                 <th>Data de pagamento realizada:</th>
                                 <th>Valor:</th>
@@ -41,11 +40,10 @@
                         </tr>
                         <tr>
                             <tbody>
-                                <td>{{dataValues.id}}</td>
                                 <td>{{#formatDate dataValues.estabelecida}} {{/formatDate}}</td>
                                 <td>{{#formatDate dataValues.dataPagamento}} {{/formatDate}}</td>
                                 <td>{{dataValues.Valor}}</td>
-                                <td><a href="/apagar/{{dataValues.id}}" onclick="apagar()" class="btn btn-danger">Apagar</a></td>
+                                <td><a href="/apagarpag/{{dataValues.id}}" onclick="apagar()" class="btn btn-danger">Apagar</a></td>
                             </tbody>
                         </tr>
                     </table>

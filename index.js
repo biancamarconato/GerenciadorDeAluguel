@@ -67,7 +67,7 @@ app.post('/confpag', function(req, res){
     Pagamento.create({
         dataEstabelecida: req.body.dataEstabelecida,
         dataPagamento: req.body.dataPagamento,
-        valor: req.body.valor
+        valor: req.body.valor,
     }).then(function(){
         res.redirect('/infopag')
     }).catch(function(erro){
